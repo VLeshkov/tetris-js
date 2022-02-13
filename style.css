@@ -1,0 +1,72 @@
+.main-window, .info-window {
+  border: solid #FFF 3px;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  font-family: "Orbitron", sans-serif;
+  color: #FFF;
+}
+
+header {
+  width: 405px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  font-size: 64px;
+  line-height: 10px;
+}
+
+.info-window {
+  position: absolute;
+  right: calc(50vw - 530px);
+  top: 96px;
+  height: 450px;
+  width: 300px;
+}
+.info-window .tetramino-preview {
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.main-window {
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.row, .preview-row {
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+}
+.row .cell, .preview-row .cell {
+  background-color: lightblue;
+  height: 35px;
+  width: 35px;
+}
+.row .preview-cell, .preview-row .preview-cell {
+  background-color: lightblue;
+  height: 35px;
+  width: 35px;
+}
+.row .coral, .preview-row .coral {
+  background-color: coral;
+}
+.row .invisible, .preview-row .invisible {
+  display: none;
+}
+
+.coral {
+  background-color: coral;
+}
+
+/*# sourceMappingURL=style.css.map */

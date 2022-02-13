@@ -1,0 +1,83 @@
+%frame-border {
+  border: solid #FFF 3px;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #000;
+  height: 100%;
+  width: 100%;
+
+  font-family: 'Orbitron', sans-serif;
+  color: #FFF;
+
+}
+
+header {
+  width: 405px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 64px;
+    line-height: 10px;
+  }
+}
+
+.info-window {
+  @extend %frame-border;
+  position: absolute;
+  right: calc(50vw - 530px);
+  top: 96px;
+  height: 450px;
+  width: 300px;
+
+  .tetramino-preview {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+.main-window {
+  @extend %frame-border;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.row, .preview-row {
+  display: flex;
+  gap: 5px;
+  margin: 5px;
+  
+  .cell {
+    background-color: lightblue;
+    height: 35px;
+    width: 35px;
+  }
+
+  .preview-cell {
+    background-color: lightblue;
+    height: 35px;
+    width: 35px;
+  }
+
+  .coral {
+    background-color: coral;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+}
+
+.coral {
+  background-color: coral;
+}
